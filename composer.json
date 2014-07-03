@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "doctrine/common": ">=2.2,<2.4-dev",
+        "doctrine/common": "2.*",
         "kriswallsmith/buzz": "0.*"
     },
     "require-dev": {
