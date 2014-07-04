@@ -26,22 +26,22 @@ class AccessTokenCache implements AccessTokenCacheInterface
 
     public function get($scope, $grantType)
     {
+        if (empty($this->cache)) return null;
         $cacheKey = $this->generateCacheKey($scope, $grantType);
-
         return $this->cache->fetch($cacheKey);
     }
 
     public function has($scope, $grantType)
     {
+        if (empty($this->cache)) return null;
         $cacheKey = $this->generateCacheKey($scope, $grantType);
-
         return $this->cache->contains($cacheKey);
     }
 
     public function set($scope, $grantType, $accessToken)
     {
+        if (empty($this->cache)) return null;
         $cacheKey = $this->generateCacheKey($scope, $grantType);
-
         return $this->cache->save($cacheKey, $accessToken, $this->lifetime);
     }
 
