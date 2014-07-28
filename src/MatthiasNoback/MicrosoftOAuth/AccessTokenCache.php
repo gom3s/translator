@@ -18,7 +18,7 @@ class AccessTokenCache implements AccessTokenCacheInterface
      * @param \Doctrine\Common\Cache\Cache $cache
      * @param int $lifetime
      */
-    public function __construct(Cache $cache, $lifetime = 540)
+    public function __construct(Cache $cache = null, $lifetime = 540)
     {
         $this->cache = $cache;
         $this->lifetime = $lifetime;
