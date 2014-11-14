@@ -1,5 +1,5 @@
 {
-    "name": "post2go/microsoft-translator",
+    "name": "topaz2/translator",
     "type": "library",
     "description": "Library for making calls to the Microsoft Translator V2 API",
     "keywords": ["translate","Microsoft Translator", "Bing"],
